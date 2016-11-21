@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SpartanGPA</string>
+    <string name="classes">Classes</string>
+    <string name="_2_classes">2 Classes</string>
+    <string name="_3_classes">3 Classes</string>
+    <string name="_4_classes">4 Classes</string>
+    <string name="_5_classes">5 Classes</string>
+    <string name="_6_classes">6 Classes</string>
+    <string name="grade">Grade</string>
+    <string name="optional">Optional</string>
+    <string name="previous">Previous</string>
+    <string name="credits">Credits</string>
+    <string name="semester_gpa">Semester GPA</string>
+    <string name="cumulative_gpa">Cumulative GPA</string>
+    <string name="_0_0">0.0</string>
+    <string name="calculate">CALCULATE</string>
+    <string name="courseName">Class</string>
+    <string name="class_1">Class 1</string>
+    <string name="class_2">Class 2</string>
+    <string name="class_3">Class 3</string>
+    <string name="class_4">Class 4</string>
+    <string name="class_5">Class 5</string>
+    <string name="class_6">Class 6</string>
+    <string name="spartan_ngpa">Spartan \nGPA</string>
+    <string name="spartan_gpa">Spartan GPA</string>
+    <string name="_1_class">1 Class</string>
+</resources>
