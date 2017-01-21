@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="edu.msu.perrym23.spartangpa.TabsActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/semester_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/missing_semester"
+        android:layout_centerInParent="true"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:tint="@color/colorAccent"
+        android:src="@drawable/ic_error_outline_white_36dp"
+        />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/missing_semester_text"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/missing_semester"
+        android:text="No semsters found. Add one now by tapping the plus icon below!"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_semester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_white_24dp"
+        android:tint="@color/colorPrimary"
+        app:fabSize="normal"
+        app:rippleColor="@color/colorAccent"
+        app:backgroundTint="@color/colorAccent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp" />
+
+</RelativeLayout>

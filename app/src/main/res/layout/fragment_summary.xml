@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="edu.msu.perrym23.spartangpa.TabsActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/colorAccent"
+        app:cardCornerRadius="16dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/title_technical_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_GPA_summary"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="16dp"
+                android:gravity="left"
+                android:text="Technical"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/info_technical_gpa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_technical_summary"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="8dp"
+                android:gravity="left"
+                android:text="3.4"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/info_cumulative_gpa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_cumulative_summary"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="56dp"
+                android:layout_marginTop="8dp"
+                android:gravity="right"
+                android:text="3.5"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/title_GPA_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="GPA"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/title_GPA_summary"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/title_cumulative_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/title_technical_summary"
+                android:layout_alignBottom="@+id/title_technical_summary"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="32dp"
+                android:gravity="right"
+                android:text="Cumulative"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_weight="1"
+         android:orientation="horizontal">
+
+         <android.support.v7.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="16dp"
+             android:backgroundTint="@color/colorAccent"
+             app:cardCornerRadius="16dp">
+
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+                 <View
+                     android:id="@+id/gpa_overview_divider"
+                     android:layout_width="match_parent"
+                     android:layout_height="3dp"
+                     android:layout_below="@+id/title_semester_summary"
+                     android:background="@color/colorPrimary" />
+
+                 <TextView
+                     android:id="@+id/title_semester_summary"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:gravity="center_horizontal"
+                     android:text="GPA Per Semester"
+                     android:textColor="@color/colorPrimary"
+                     android:textSize="24sp"
+                     android:textStyle="bold"
+                     android:layout_alignParentBottom="true"
+                     android:layout_alignParentStart="true" />
+
+
+             </RelativeLayout>
+
+
+         </android.support.v7.widget.CardView>//
+
+     </LinearLayout> -->
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/colorAccent"
+        app:cardCornerRadius="16dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/info_credits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/credits_divider"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="32"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/title_credits_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="Total Credits"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/credits_divider"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/title_credits_summary"
+                android:background="@color/colorPrimary" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

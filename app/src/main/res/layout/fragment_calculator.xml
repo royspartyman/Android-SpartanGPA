@@ -6,7 +6,105 @@
     android:background="@color/colorPrimary"
     android:orientation="vertical">
 
-    <include layout="@layout/gpa_toolbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/optional"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/previous"
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/credits"
+                android:textColor="@color/colorAccent" />
+
+            <EditText
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:id="@+id/prev_credits"
+                android:padding="4dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:maxLength="3"
+                android:inputType="number"
+                android:background="@drawable/rounded_et" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/grade"
+                android:textColor="@color/colorAccent" />
+
+            <EditText
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:id="@+id/prev_grade"
+                android:padding="4dp"
+                android:layout_marginBottom="16dp"
+                android:maxLines="1"
+                android:maxLength="4"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_et" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_marginLeft="16dp"
@@ -15,6 +113,38 @@
         android:layout_height="wrap_content"
         android:layout_weight="2"
         android:orientation="horizontal">
+
+        <LinearLayout
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:padding="4dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:id="@+id/add_class"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_add_circle_outline_white_18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:padding="4dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:id="@+id/hide_class"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_remove_circle_outline_white_18dp"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
 
         <LinearLayout
             android:paddingRight="8dp"
@@ -318,106 +448,10 @@
                 android:background="@drawable/rounded_et" />
 
         </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="2"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_horizontal|center_vertical"
-            android:layout_gravity="center_horizontal|center_vertical"
-            android:orientation="vertical">
-
-            <TextView
-                android:textSize="16sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/optional"
-                android:textStyle="bold"
-                android:textColor="@color/colorAccent" />
-
-            <TextView
-                android:textSize="16sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/previous"
-                android:textColor="@color/colorAccent" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:padding="4dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_horizontal|center_vertical"
-            android:layout_gravity="center_horizontal|center_vertical"
-            android:orientation="vertical">
-
-            <TextView
-                android:textSize="16sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/credits"
-                android:textColor="@color/colorAccent" />
-
-            <EditText
-                android:gravity="center_horizontal|center_vertical"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:id="@+id/prev_credits"
-                android:padding="4dp"
-                android:layout_marginBottom="16dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:maxLines="1"
-                android:maxLength="3"
-                android:inputType="number"
-                android:background="@drawable/rounded_et" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:padding="4dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_horizontal|center_vertical"
-            android:layout_gravity="center_horizontal|center_vertical"
-            android:orientation="vertical">
-
-            <TextView
-                android:textSize="16sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/grade"
-                android:textColor="@color/colorAccent" />
-
-            <EditText
-                android:gravity="center_horizontal|center_vertical"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:id="@+id/prev_grade"
-                android:padding="4dp"
-                android:layout_marginBottom="16dp"
-                android:maxLines="1"
-                android:maxLength="4"
-                android:inputType="numberDecimal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rounded_et" />
-
-        </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_margin="8dp"
         android:layout_weight="2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -519,7 +553,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_et"
             android:text="@string/calculate"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="@color/colorPrimary" />
 

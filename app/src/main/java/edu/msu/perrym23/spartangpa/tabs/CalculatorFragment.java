@@ -1,15 +1,15 @@
-package edu.msu.perrym23.spartangpa;
+package edu.msu.perrym23.spartangpa.tabs;
 
-
-import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.util.List;
@@ -19,16 +19,15 @@ import butterknife.BindView;
 import butterknife.BindViews;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
+import edu.msu.perrym23.spartangpa.R;
 
-public class GPAActivity extends AppCompatActivity {
+/**
+ * Created by royspartyman on 12/27/16.
+ */
 
-    public static String CLASSAMOUNT = "edu.msu.perrym23.spartangpa";
+public class CalculatorFragment extends Fragment {
+
     private Integer classAmount = 0;
-
-    @BindView(R.id.toolbar_title)
-    TextView toolbarTitleTV;
 
     @BindViews({R.id.class_one, R.id.class_two, R.id.class_three, R.id.class_four, R.id.class_five, R.id.class_six})
     List<EditText> classesED;
@@ -54,6 +53,39 @@ public class GPAActivity extends AppCompatActivity {
     @BindView(R.id.prev_grade)
     EditText previousgradeET;
 
+    @BindView(R.id.hide_class)
+    ImageButton hideClassIB;
+
+    @BindView(R.id.add_class)
+    ImageButton addClassIB;
+
+    @OnClick(R.id.add_class)
+    public void onAddClassClick() {
+        classAmount +=1;
+        if(classAmount < 6){
+            addClass(classAmount - 1);
+        }
+        if (classAmount == 2){
+            hideClassIB.setVisibility(View.VISIBLE);
+        }
+        else if(classAmount == 6){
+            addClassIB.setVisibility(View.GONE);
+            addClass(classAmount - 1);
+        }
+    }
+
+    @OnClick(R.id.hide_class)
+    public void onHideClassClick() {
+        classAmount -= 1;
+        if (classAmount == 1){
+            hideClassIB.setVisibility(View.GONE);
+        }
+        else if (classAmount == 5){
+            addClassIB.setVisibility(View.VISIBLE);
+        }
+        hideClass(classAmount);
+    }
+
     @OnClick(R.id.calculate)
     public void onCalculateButtonClick() {
 
@@ -61,13 +93,13 @@ public class GPAActivity extends AppCompatActivity {
         float totalCredits = 0;
         float prevCredits = 0;
         float prevGrade = 0;
-        float lastGrade = 0;
-        float megaCredits = 0;
-        float megaGPA = 0;
-        float semesterGpa = 0;
-        float finalGrade = 0;
+        float lastGrade;
+        float megaCredits;
+        float megaGPA;
+        float semesterGpa;
+        float finalGrade;
         int correctEnding = 0;
-        String message = "";
+        String message;
         int gradeMissingCounter = 0;
         int creditMissingCounter = 0;
         int higherThanFour = 0;
@@ -85,7 +117,7 @@ public class GPAActivity extends AppCompatActivity {
             if (Objects.equals(creditsED.get(i).getText().toString(), "")) {
                 ++creditMissingCounter;
             }
-            if (gradesED.get(i).getText().toString().endsWith(".5") || gradesED.get(i).getText().toString().endsWith(".0")) {
+            if (gradesED.get(i).getText().toString().endsWith(".5") || gradesED.get(i).getText().toString().endsWith(".0") || gradesED.get(i).getText().toString().length() == 1) {
                 ++correctEnding;
             }
         }
@@ -167,52 +199,39 @@ public class GPAActivity extends AppCompatActivity {
         classesED.get(5).setCursorVisible(true);
     }
 
-    @OnClick(R.id.backButton)
-    public void onBackButtonClick() {
-        super.onBackPressed();
+    public CalculatorFragment() {
+        // Required empty public constructor
     }
 
     @Override
-    protected void attachBaseContext(Context newBase) {
-        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
-    }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
-                .setDefaultFontPath("fonts/spartans.otf")
-                .setFontAttrId(R.attr.fontPath)
-                .build()
-        );
-        setContentView(R.layout.activity_gpa_calculate);
-        ButterKnife.bind(this);
-
-        Intent intent = this.getIntent();
-        classAmount = intent.getIntExtra(CLASSAMOUNT, 0);
-
-        if (classAmount > 1) {
-            addClasses();
-        }
-
-        if (classAmount == 1) {
-            toolbarTitleTV.setText(classAmount.toString() + " " + getString(R.string.courseName));
-        } else {
-            toolbarTitleTV.setText(classAmount.toString() + " " + getString(R.string.classes));
-        }
-
     }
 
-    private void addClasses() {
-        for (int i = 0; i < classAmount; i++) {
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_calculator, container, false);
+        ButterKnife.bind(this, view);
+        classAmount = 1;
+        return view;
+    }
+
+    private void addClass(int i) {
             classesED.get(i).setVisibility(View.VISIBLE);
             creditsED.get(i).setVisibility(View.VISIBLE);
             gradesED.get(i).setVisibility(View.VISIBLE);
-        }
+    }
+
+    private void hideClass(int i) {
+            classesED.get(i).setVisibility(View.GONE);
+            creditsED.get(i).setVisibility(View.GONE);
+            gradesED.get(i).setVisibility(View.GONE);
     }
 
     public void displayErrorMessasge(String message) {
-        AlertDialog alertDialog = new AlertDialog.Builder(GPAActivity.this).create();
+        AlertDialog alertDialog = new AlertDialog.Builder(getContext()).create();
         alertDialog.setMessage(message);
         alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                 new DialogInterface.OnClickListener() {
@@ -222,8 +241,4 @@ public class GPAActivity extends AppCompatActivity {
                 });
         alertDialog.show();
     }
-
 }
-
-
-

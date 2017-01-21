@@ -24,4 +24,208 @@
     <string name="spartan_ngpa">Spartan \nGPA</string>
     <string name="spartan_gpa">Spartan GPA</string>
     <string name="_1_class">1 Class</string>
+    <string name="start">FINISH</string>
+    <string name="number_picker_formatter">%02d</string>
+    <string name="roboto_light">sans-serif-light</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="facebook_app_id">729494990534307</string>
+    <string name="fb_login_protocol_scheme">fb729494990534307</string>
+    <string name="finish">FINISH</string>
+
+    <string-array name="years">
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+    </string-array>
+
+    <string-array name="status">
+        <item>Freshman</item>
+        <item>Sophomore</item>
+        <item>Junior</item>
+        <item>Senior</item>
+        <item>Super Senior</item>
+    </string-array>
+
+    <string-array name="terms">
+        <item>Fall</item>
+        <item>Spring</item>
+        <item>Summer</item>
+    </string-array>
+
+    <string-array name="msu_undergrad">
+        <item>Accounting</item>
+        <item>Actuarial Science</item>
+        <item>Additional Major in Arabic</item>
+        <item>Additional Major in Chinese</item>
+        <item>Additional Major in German</item>
+        <item>Additional Major in Global Studies in the Arts and Humanities</item>
+        <item>Additional Major in Japanese</item>
+        <item>Additional Major in Russian</item>
+        <item>Advertising</item>
+        <item>Agribusiness Management</item>
+        <item>Agriculture, Food and Natural Resources Education</item>
+        <item>Animal Science</item>
+        <item>Anthropology - Bachelor of Arts</item>
+        <item>Anthropology - Bachelor of Science</item>
+        <item>Apparel and Textile Design</item>
+        <item>Apparel and Textiles</item>
+        <item>Applied Engineering Sciences</item>
+        <item>Arabic</item>
+        <item>Art Education</item>
+        <item>Art History and Visual Culture</item>
+        <item>Arts and Humanities</item>
+        <item>Astrophysics</item>
+        <item>Athletic Training</item>
+        <item>Biochemistry and Molecular Biology</item>
+        <item>Biochemistry and Molecular Biology/Biotechnology</item>
+        <item>Biological Science-Interdepartmental</item>
+        <item>Biology Major</item>
+        <item>Biomedical Laboratory Science</item>
+        <item>Biosystems Engineering</item>
+        <item>Chemical Engineering</item>
+        <item>Chemical Physics</item>
+        <item>Chemistry - Bachelor of Arts</item>
+        <item>Chemistry - Bachelor of Science</item>
+        <item>Child Development - Bachelor of Arts</item>
+        <item>Chinese</item>
+        <item>Civil Engineering</item>
+        <item>Clinical Laboratory Sciences</item>
+        <item>Communication</item>
+        <item>Comparative Cultures and Politics Major</item>
+        <item>Composition</item>
+        <item>Computational Chemistry (this program is in moratorium Summer 2013 through Spring 2017)</item>
+        <item>Computational Mathematics - Bachelor of Arts</item>
+        <item>Computational Mathematics - Bachelor of Science</item>
+        <item>Computer Engineering</item>
+        <item>Computer Science</item>
+        <item>Computer Science Major</item>
+        <item>Construction Management</item>
+        <item>Criminal Justice</item>
+        <item>Crop and Soil Sciences</item>
+        <item>Dietetics</item>
+        <item>Early Care and Education</item>
+        <item>Earth Science - Interdepartmental (this program is in moratorium Spring 2017 through Fall 2020)</item>
+        <item>Earth Science Major</item>
+        <item>Economic Geography</item>
+        <item>Economics - Bachelor of Arts</item>
+        <item>Economics - Bachelor of Science</item>
+        <item>Education</item>
+        <item>Electrical Engineering</item>
+        <item>English</item>
+        <item>Entomology</item>
+        <item>Environmental Biology/Microbiology</item>
+        <item>Environmental Biology/Plant Biology</item>
+        <item>Environmental Biology/Zoology</item>
+        <item>Environmental Economics and Management</item>
+        <item>Environmental Engineering</item>
+        <item>Environmental Geography</item>
+        <item>Environmental Geosciences</item>
+        <item>Environmental Sciences and Management Major</item>
+        <item>Environmental Studies and Sustainability</item>
+        <item>Experience Architecture</item>
+        <item>Film Studies</item>
+        <item>Finance</item>
+        <item>Fisheries and Wildlife</item>
+        <item>Food Industry Management</item>
+        <item>Food Science</item>
+        <item>Forestry</item>
+        <item>French</item>
+        <item>Genomics and Molecular Genetics</item>
+        <item>Geographic Information Science</item>
+        <item>Geography - Bachelor of Arts (this program is in moratorium effective Fall 2014 through Summer 2016)</item>
+        <item>Geography - Bachelor of Science (this program is in moratorium effective Fall 2014 through Summer 2016)</item>
+        <item>Geological Sciences</item>
+        <item>German</item>
+        <item>Global and Area Studies- Social Science (the Bachelor of Science degree program is in moratorium effective Summer 2016 through Spring 2019)</item>
+        <item>Global and International Studies in Social Science</item>
+        <item>Global Studies in the Arts and Humanities</item>
+        <item>Graphic Design</item>
+        <item>History</item>
+        <item>History Education</item>
+        <item>History, Philosophy and Sociology of Science Major</item>
+        <item>Horticulture</item>
+        <item>Hospitality Business</item>
+        <item>Human Biology</item>
+        <item>Human Development and Family Studies - Bachelor of Arts</item>
+        <item>Human Development and Family Studies - Bachelor of Science</item>
+        <item>Human Geography</item>
+        <item>Human Resource Management</item>
+        <item>Humanities - Prelaw Program</item>
+        <item>Integrative Biology - Bachelor of Science</item>
+        <item>Interdisciplinary Humanities, Program in</item>
+        <item>Interdisciplinary Studies in Social Science - Bachelor of Arts or Bachelor of Science  (Bachelor of Arts)</item>
+        <item>Interdisciplinary Studies in Social Science - Bachelor of Arts or Bachelor of Science  (Bachelor of Science)</item>
+        <item>Interdisciplinary Studies in Social Science: Social Science Education - Bachelor of Arts</item>
+        <item>Interior Design</item>
+        <item>International Relations Major</item>
+        <item>Japanese</item>
+        <item>Jazz Studies</item>
+        <item>Journalism</item>
+        <item>Kinesiology</item>
+        <item>Landscape Architecture</item>
+        <item>Linguistics</item>
+        <item>Management</item>
+        <item>Marketing</item>
+        <item>Materials Science and Engineering</item>
+        <item>Mathematics - Bachelor of Arts</item>
+        <item>Mathematics - Bachelor of Science</item>
+        <item>Mathematics, Advanced - Bachelor of Arts</item>
+        <item>Mathematics, Advanced - Bachelor of Science</item>
+        <item>Mechanical Engineering</item>
+        <item>Media and Information - Bachelor of Arts</item>
+        <item>Media and Information - Bachelor of Science (this program is in moratorium effective Fall 2016 through Summer 2020)</item>
+        <item>Microbiology</item>
+        <item>Music</item>
+        <item>Music Education</item>
+        <item>Music Performance</item>
+        <item>Neuroscience</item>
+        <item>Nursing</item>
+        <item>Nutritional Sciences</item>
+        <item>Packaging</item>
+        <item>Philosophy</item>
+        <item>Physical Science - Interdepartmental</item>
+        <item>Physical Science Major</item>
+        <item>Physics - Bachelor of Arts</item>
+        <item>Physics - Bachelor of Science</item>
+        <item>Physiology</item>
+        <item>Plant Biology</item>
+        <item>Political Science - General</item>
+        <item>Political Science - Prelaw</item>
+        <item>Political Theory and Constitutional Democracy Major</item>
+        <item>Professional Writing</item>
+        <item>Psychology - Bachelor of Arts</item>
+        <item>Psychology - Bachelor of Science</item>
+        <item>Public Policy</item>
+        <item>Religious Studies</item>
+        <item>Russian</item>
+        <item>Social Relations and Policy Major</item>
+        <item>Social Work</item>
+        <item>Sociology - Bachelor of Arts</item>
+        <item>Sociology - Bachelor of Science</item>
+        <item>Spanish</item>
+        <item>Special Education  (Special Ed-Learn Disabilities)</item>
+        <item>Statistics  (Bachelor of Arts)</item>
+        <item>Statistics  (Bachelor of Science)</item>
+        <item>Studio Art - Bachelor of Arts</item>
+        <item>Studio Art - Bachelor of Fine Arts</item>
+        <item>Supply Chain Management</item>
+        <item>Sustainable Parks, Recreation and Tourism</item>
+        <item>Theatre - Bachelor of Arts</item>
+        <item>Theatre - Bachelor of Fine Arts</item>
+        <item>Urban and Regional Planning</item>
+        <item>Veterinary Technology</item>
+        <item>Women\'s and Gender Studies</item>
+        <item>World Politics</item>
+        <item>Zoology - Bachelor of Arts</item>
+        <item>Zoology - Bachelor of Science</item>
+    </string-array>
+
 </resources>
